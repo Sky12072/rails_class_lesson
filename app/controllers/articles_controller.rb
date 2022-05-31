@@ -3,19 +3,19 @@ class ArticlesController < ApplicationController
         @time = Time.now
         @articles = Article.all
 
-        console
+        
     end
 
     def show
         @article = Article.find(params[:id])
 
-        console
+       
     end
 
     def new
         @article = Article.new
 
-        console
+         
     end
 
 
