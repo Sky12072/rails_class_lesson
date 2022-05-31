@@ -9,8 +9,8 @@
 
 10.times do |i|
     articles = Article.create([
-        { title: "This is title #{i}",
-            body: 'blabladlfal', 
+        { title: Faker::TvShows::DrWho.quote,
+            body: Faker::Quotes::Shakespeare.as_you_like_it_quote, 
             importance: rand(1..10) 
         }
     ])
